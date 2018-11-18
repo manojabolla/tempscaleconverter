@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Temperature Scale Converter</title>
+</head>
+<body>
+<h1>Fahrenheit to Celcius</h1>
+<form>
+Enter Fahrenheit scale:
+<input id= "num1" size= "10" maxlength="20">
+<br/>
+<button type="button" onclick="check1()">Click Me!</button>
+<input type="reset" name= "reset" value="clear form">
+<p>Enter in Celcius scale:
+<input type="text" id= "num2" size="10 maxlength="20">
+</p>
+<br/>
+<button type="button" onclick="check2()">Click Me!</button>
+<input type="reset" name= "reset" value="clear form">
+</form>
+
+<script>
+function check1(){
+var x=parseFloat(document.getElementById("num1").value);
+if(document.getElementById("num1").value== " "){
+alert("You must enter a value");
+}
+else{
+var y=(x-32)*(5/9);
+document.write("<h1>Temperature of"+x+"degrees fahrenheit ="+y+"degree celsius</h1>");
+document.write("<a href=Javascript:history.back();> Click here to go back</a>");
+}
+}
+function check2(){
+var x=parseFloat(document.getElementById("num2").value);
+if(document.getElementById("num2").value== " "){
+alert("You must enter a value");
+}
+else{
+var y=(x*(9/5)+32;
+document.write("<h1>Temperature of"+x+"degrees celsius ="+y+"degree Fahrenheit</h1>");
+document.write("<a href=Javascript:history.back();> Click here to go back</a>");
+}
+}
+</script>
+</body>
+</html>
+
+
